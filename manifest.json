@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "SD Prompts Checker",
+  "version": "1.2",
+  "description": "Checks PNG metadata embedded by Stable Diffusion.",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ],
+  "permissions": [
+    "contextMenus"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ]
+}
