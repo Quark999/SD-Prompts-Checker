@@ -1,0 +1,21 @@
+#container-stablediffusion {
+  position: fixed;
+  z-index: 2147483647;
+  background-color: rgb(0 0 0 / 85%);
+  color: white;
+  padding: 1rem;
+  border: 2px solid #00ff0a;
+  margin: 0;
+  font-family: monospace;
+  max-width: min(900px, 80vw);
+  max-height: 80vh;
+  overflow: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#container-stablediffusion pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
